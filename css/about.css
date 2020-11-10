@@ -1,0 +1,56 @@
+body{
+	
+	background-color: gray;
+	
+}
+
+.pol {
+	margin-left: 3em;
+}
+p{
+	
+	color: white;
+	font-weight: bold;
+}
+.row {
+  display: flex;
+}
+* {
+  box-sizing: border-box;
+}
+.first img{
+	
+	
+	height: 300px;
+	width: 300px;
+	transform: rotate(90deg);
+	margin-right:  1.23em;
+	margin-left:  3em;
+	
+	
+}
+
+.second img{
+	
+	transform: rotate(90deg);
+	height: 300px;
+	width: 300px;
+	flex: 33.33%;
+	margin-right: 1.23em;
+}
+.third img{
+	
+	transform: rotate(90deg);
+	height: 300px;
+	width: 300px;
+	margin-right: 1.23em;
+	
+}
+.fourth img{
+	
+	transform: rotate(90deg);
+	height: 300px;
+	width: 300px;
+	margin-right:  1.23em;
+	
+}

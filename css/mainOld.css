@@ -1,0 +1,294 @@
+
+/* relative is relative to the normal position. Absolute is relative to the nearest positiond anscestor*/
+
+*{
+  font-family: Century Gothic;
+  font-size: 1em;
+
+}
+
+header, footer, nav, div, p, body {
+   font-family: Century Gothic,Verdana, Tahoma, "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sans", sans-serif;
+   font-size: 1em;
+
+}
+
+header {
+  position: relative;
+  height: 8em;
+  background-color: #008000;
+  /* background-color: lightgreen; */
+}
+
+#title{
+  font-family: Vendana, Arial, sans-serif;
+  /* padding: 8px 20px 12px 0px ; */
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1;
+  color: white;
+  position: relative;
+  float: left;
+  border: 0.1em;
+  border-style: solid;
+  border-color: white;
+
+}
+
+.brand{
+  float: left;
+  border-style: solid;
+  border-color: black;
+}
+
+#nav{
+  float: left;
+  font-size: 1.5em;
+  color: white;
+  margin: 2em;
+  display: inline;
+  font-weight: bold
+}
+
+header nav ul li a:hover{
+	background-color: white;
+	color: #000;
+}
+
+header nav ul li a{
+	 text-decoration: none;
+	 display: inline;
+	 color: black;
+	 padding: 2em;
+	 transition: 0.5s ease;
+	 border: 1px solid transparent;
+}
+
+.sideNav li a{
+	 text-decoration: none;
+	 display: inline;
+	 color: black;
+	 transition: 0.5s ease;
+   padding: 0 2em 0 2em;
+	 border: 1px solid transparent;
+}
+
+.sideNav li:hover{
+  background-color: grey;
+	color: #000;
+}
+
+.sideNav li{
+  text-align: center;
+  padding: 1em;
+  background-color: #9CF494;
+}
+
+
+
+
+header nav {
+  color: white;
+  position: relative;
+  float: right;
+
+}
+
+
+header ul {
+   list-style-type: none;
+   margin:0;
+   padding:0;
+}
+header li {
+   display: inline;
+}
+header li a:link {
+   text-decoration: none;
+}
+
+
+/* Main structure */
+
+div#container {
+  position: relative;
+  /*some ppl needed width 100%*/
+}
+#main {
+   /* margin: 0 20em 0 16em; */
+}
+
+aside {
+position: absolute;
+right: 0px;
+top: 0px;
+width: 19em;
+
+}
+
+
+#rail {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 15em;
+}
+
+/* other common classes */
+
+.well, .alert {
+   margin-bottom: 2em;
+   padding: 1em;
+}
+.well {
+   background-color: #f5f5f5;
+   border: 1px solid #eee;
+   border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.well h3 {
+   background-color: #9CF494;
+   padding: 1em;
+}
+
+
+.alert {
+   background-color: #edebe1;
+   border-color: #e0d9cb;
+   color: #817b58;
+
+}
+
+.alert img{
+  width: 50%;
+  display: block;
+  margin-top: 1.5em;
+  margin-left: 3em ;
+  margin-bottom: 3em;
+}
+
+.breadcrumb {
+   padding: 0.5em 1em;
+   list-style: none;
+   background-color: #fbfbfb;
+}
+
+/* main styles */
+#main {
+   padding: 0.5em 0.75em;
+}
+#main h2 {
+   padding-top: 1em;
+   font-size: 1.5em;
+}
+#main h4 {
+   padding-top: 1.5em;
+   font-size: 1.2em;
+}
+#main th {
+   text-align: left;
+}
+#main table {
+  font-size: 0.8em;
+  width: 100%;
+}
+
+
+#main #yourCompany {
+float: left;
+   margin-bottom: 1.5em;
+   font-size: 0.8em;
+}
+#main #client {
+    float: right;
+   font-size: 0.8em;
+}
+#main hr {
+   clear: both;
+}
+.bigButton {
+   margin-top: 1em;
+   background-color: rgb(63, 159, 217);
+   text-align: center;
+   color: #f5f5f5;
+   text-decoration: none;
+   display: block;
+   width: 10em;
+   padding: 0.5em;
+}
+
+
+/* left rail styles */
+
+#rail nav {
+
+}
+#rail nav  ul {
+   list-style-type:none;
+   font-size: 1.1em;
+}
+#rail nav  ul li {
+   margin-bottom: 0.3em;
+}
+
+/* right aside styles */
+
+ul#changeList, ul#sellersList, ul#messageList {
+
+   background-color: white;
+   list-style-type:none;
+}
+ul#changeList li {
+   overflow: auto;
+   padding-top: 1em;
+}
+ul#changeList li  p{
+   padding-top: 0.5em;
+}
+ul#changeList li span {
+  float: left;
+   min-width: 1.75em;
+   text-align: right;
+   font-size: 2em;
+   padding: 0 1em 0 0;
+   color: #616466;
+   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+ul#sellersList li, ul#messageList li {
+   overflow: auto;
+   padding: 1em 0.25em 0 0;
+   font-size: 0.75em;
+}
+ul#sellersList img{
+float: left;
+}
+ul#sellersList p {
+   padding-top: 1.5em;
+}
+
+ul#messageList  img {
+   float: left;
+   padding-right: 0.5em;
+}
+#messageList li  p {
+   font-size: 0.9em;
+   padding: 0.3em 0.25em;
+}
+
+#footer {
+  position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 60px;
+   background-color: lightgray;
+   color: black;
+   text-align: left;
+}
+
+#footer p{
+  background-color: inherit;
+}

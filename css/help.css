@@ -1,0 +1,21 @@
+body{
+	
+	background-color: lightgray;
+	
+	
+}
+.help{
+	
+	border: 2px solid black;
+	width: 450px;
+	margin-left: 28em;
+	margin-top: 8em;
+	
+	
+}
+
+p{
+	
+	padding-left: 0.6em;
+	font-weight: bold;
+}
